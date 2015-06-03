@@ -69,7 +69,7 @@ namespace Overust.Views
                         //ChatTextBox.Document.Blocks.LastBlock.Foreground = Brushes.Black;
 
                     var run = new Run(message);
-                    if(ViewModel.ChatSettings.IsNotificationsEnabled)
+                    if(ViewModel.ChatSettings.IsNotificationsEnabled && ViewModel.ChatSettings.NotificationWords != null)
                     {
                         foreach(var notificationWord in ViewModel.ChatSettings.NotificationWords)
                         {
