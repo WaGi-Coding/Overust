@@ -1,0 +1,18 @@
+﻿<Window x:Class="Overust.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:Overust.Controls"
+        xmlns:views="clr-namespace:Overust.Views"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="Overust" Height="600" Width="800"
+        Background="{DynamicResource WindowBackgroundBrush}"
+        Closing="ApplicationClosing" Initialized="Window_Initialized" Icon="Resources/Images/iconrawsmall.png" Activated="Window_Activated" Topmost="{Binding GeneralSettings.KeepWindowTopmost}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <views:ConnectionBarView/>
+        <views:NavigationView Grid.Row="1"/>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Application x:Class="Overust.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         <ResourceDictionary>
+             <ResourceDictionary.MergedDictionaries>
+                 <ResourceDictionary Source="pack://application:,,,/InlineToolkit;component/WPF/Resources.xaml"/>
+                 <ResourceDictionary Source="Resources/Themes/OverustTheme.xaml"/>
+                 <ResourceDictionary Source="Resources/Styles/GlobalStyles.xaml"/>
+                 <ResourceDictionary Source="Resources/Styles/TextBoxStyle.xaml"/>
+                 <ResourceDictionary Source="Resources/Styles/NavigationStyle.xaml"/>
+                 <ResourceDictionary Source="Resources/Styles/SectionStyle.xaml"/>
+                 <ResourceDictionary Source="Resources/Styles/ButtonStyle.xaml"/>
+                 <ResourceDictionary Source="Resources/Styles/GridSplitterStyle.xaml"/>
+                 <ResourceDictionary Source="Resources/Styles/ListViewStyle.xaml"/>
+                 <ResourceDictionary Source="Resources/Styles/DataGridStyle.xaml"/>
+                 <ResourceDictionary Source="Resources/Styles/CheckBoxStyle.xaml"/>
+                 <ResourceDictionary Source="Resources/Styles/CategoryStyle.xaml"/>
+             </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

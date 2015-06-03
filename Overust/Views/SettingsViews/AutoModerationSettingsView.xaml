@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="Overust.Views.SettingsViews.AutoModerationSettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             DataContext="{Binding ViewModel.AutoModerationSettings, RelativeSource={RelativeSource Self}}"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <StackPanel Margin="10, 10, 10, 10">
+            <TextBlock Text="Ping"/>
+            <CheckBox Content="Enable ping moderation" IsChecked="{Binding IsPingModerationEnabled, Mode=TwoWay}"  Margin="20, 10, 0, 0"/>
+            <StackPanel IsEnabled="{Binding IsPingModerationEnabled}">
+                <TextBlock Text="Kick if ping is over" Margin="20, 10, 0, 0" PreviewTextInput="PingKickTextBoxPreviewTextInput"/>
+                <TextBox Text="{Binding PingKickThreshold, Mode=TwoWay}" Margin="20, 5, 0, 0" Width="50" HorizontalAlignment="Left" PreviewTextInput="PingKickTextBoxPreviewTextInput"/>
+            </StackPanel>
+
+            <!--<TextBlock Text="Chat" Margin="0, 20, 0, 0"/>
+            <CheckBox Content="Enable chat moderation" IsChecked="{Binding IsChatModerationEnabled, Mode=TwoWay}" Margin="20, 10, 0, 0"/>
+            <StackPanel IsEnabled="{Binding IsChatModerationEnabled}">
+                <TextBlock Margin="20, 10, 0, 0">
+                    <Run Text="Auto-Kick words"/>
+                    <LineBreak/>
+                    <Run Text="Separate multiple words with a semicolon &quot;;&quot; character." Foreground="DarkGray"/>
+                    <LineBreak/>
+                    <Run Text="Words are not case sensitive." Foreground="DarkGray"/>
+                </TextBlock>
+                <TextBox Text="{Binding ChatKickModerationString, Mode=TwoWay}"  Margin="20, 10, 0, 0"/>
+                
+                <TextBlock Margin="20, 10, 0, 0">
+                    <Run Text="Auto-Ban words"/>
+                    <LineBreak/>
+                    <Run Text="Separate multiple words with a semicolon &quot;;&quot; character." Foreground="DarkGray"/>
+                    <LineBreak/>
+                    <Run Text="Words are not case sensitive." Foreground="DarkGray"/>
+                </TextBlock>
+                <TextBox Text="{Binding ChatBanModerationString, Mode=TwoWay}"  Margin="20, 10, 0, 0"/>
+            </StackPanel>-->
+        </StackPanel>
+    </Grid>
+</UserControl>
