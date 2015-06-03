@@ -1,4 +1,4 @@
 # Overust
 An RCON built for Rust.
 
-![test](http://i.imgur.com/dpg5n5Q.png)
+![test](http://i.imgur.com/zIcgbhQ.png)
